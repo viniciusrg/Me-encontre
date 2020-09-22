@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-09-22T00:15:09.236Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36" etag="T40HGK3hCjixLJfgcSA8" version="13.7.3" type="github">
+<mxfile host="app.diagrams.net" modified="2020-09-22T00:47:52.763Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36" etag="ZBKMcI77gDyZcPHtuBlE" version="13.7.3" type="github">
   <diagram id="h2pMsY_fY3SbEEJT5J7Q" name="Page-1">
     <mxGraphModel dx="1185" dy="693" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -108,6 +108,12 @@
         </mxCell>
         <mxCell id="0sH4e93rv22DoxFhIga--43" value="-mensagem : string" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="0sH4e93rv22DoxFhIga--40" vertex="1">
           <mxGeometry y="78" width="140" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="xqeKnumn-GumZO9aHTYu-1" value="Conferir a necessidade de utilizar essa classe Busca" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
+          <mxGeometry x="450" y="320" width="300" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="xqeKnumn-GumZO9aHTYu-2" value="Se excluir busca, liga Notificação em&lt;br&gt;Pessoa" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="90" width="210" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
