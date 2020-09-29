@@ -1,0 +1,29 @@
+package classes;
+
+import java.util.List;
+
+public class MoradorDeRua extends Pessoa {
+
+	private String cidadeNatal;
+	private String informacoesAdicionais;
+	
+	public String getCidadeNatal() {
+		return cidadeNatal;
+	}
+	public void setCidadeNatal(String cidadeNatal) {
+		this.cidadeNatal = cidadeNatal;
+	}
+	public String getInformacoesAdicionais() {
+		return informacoesAdicionais;
+	}
+	public void setInformacoesAdicionais(String informacoesAdicionais) {
+		this.informacoesAdicionais = informacoesAdicionais;
+	}
+	public MoradorDeRua(List<String> nomeFamiliar) {
+		super(nomeFamiliar);
+		// TODO Auto-generated constructor stub
+	}
+
+	
+	
+}

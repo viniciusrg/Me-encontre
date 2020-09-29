@@ -1,0 +1,56 @@
+package Play;
+
+import classes.MoradorDeRua;
+import classes.Pessoa;
+import classes.Familiar;
+import classes.Contato;
+import classes.Notificacao;
+
+import java.util.ArrayList;
+import java.util.List;
+
+
+public class App {
+
+	public static void main(String[] args) {
+		
+		String aux="Zé";
+		
+		MoradorDeRua morador = new MoradorDeRua();
+		morador.setNome("Matheus");
+		morador.setCidadeAtual("Alfenas");
+		morador.setCpf("11122233344");
+		morador.setIdade(25);
+		morador.setCidadeNatal("Areado");
+		morador.setNomeFamiliar(aux.add);
+		morador.setInformacoesAdicionais("Nenhuma.");
+		
+		Familiar familia = new Familiar();
+		familia.setNome("Joao");
+		familia.setEmail("joao@joao.com");
+		familia.setCidadeAtual("Varginha");
+		familia.setTelefone("35988888888");
+		
+		Contato cont = new Contato();
+		cont.setNome("Raimundo");
+		cont.setEmail("raimundo@gmail.com");
+		cont.setMensagem("Estou procurando meu irmao, Matheus!");
+		
+		
+		System.out.println(morador.getNome());
+		System.out.println(morador.getCidadeAtual());
+		System.out.println(morador.getIdade());
+		System.out.println(morador.getCidadeNatal());
+		System.out.println(morador.getCpf());
+		System.out.println(morador.getNomeFamiliar());
+		System.out.println(morador.getInformacoesAdicionais());
+		
+		System.out.println(familia.getNome());
+		System.out.println(familia.getEmail());
+		System.out.println(familia.getCidadeAtual());
+		System.out.println(familia.getTelefone());
+		
+		
+	}
+
+}
