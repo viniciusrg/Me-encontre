@@ -40,19 +40,19 @@ public class App {
 		cont.setMensagem("Estou procurando meu irmao, Matheus!");
 		
 		
-		System.out.println("Informação do morador cadastrado:");
+		System.out.println("InformaÃ§Ã£o do morador cadastrado:");
 		
 		System.out.println("Nome: " + morador.getNome());
 		System.out.println("Cidade atual: " + morador.getCidadeAtual());
 		System.out.println("Idade: " + morador.getIdade());
 		System.out.println("Cidade natal: " + morador.getCidadeNatal());
 		System.out.println("Cpf: " + morador.getCpf());
-		System.out.println("Nome dos familiares: " + morador.getNomeFamiliar().get(0));
-		System.out.println("Informações adicionais: " + morador.getInformacoesAdicionais());
+		System.out.println("Nome dos familiares: " + morador.getNomeFamiliar());
+		System.out.println("InformaÃ§Ãµes adicionais: " + morador.getInformacoesAdicionais());
 		
 		
 		System.out.println();
-		System.out.println("Informações do familiar cadastrado:");
+		System.out.println("InformaÃ§Ãµes do familiar cadastrado:");
 		
 		System.out.println("Nome: " + familia.getNome());
 		System.out.println("Email: " + familia.getEmail());
@@ -64,7 +64,7 @@ public class App {
 		System.out.println("Nome do morador: " + familia.getNomeFamiliar());
 		
 		System.out.println();
-		System.out.println("Formulário para contato:");
+		System.out.println("FormulÃ¡rio para contato:");
 		
 		System.out.println("Nome: "+ cont.getNome());
 		System.out.println("Email: " + cont.getEmail());
