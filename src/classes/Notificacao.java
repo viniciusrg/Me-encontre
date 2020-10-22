@@ -1,11 +1,30 @@
 package classes;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@Entity
 public class Notificacao {
 
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private long id;
+	
+	
 	private String nome;
+	
+	
 	private String [] nomeFamiliar;
+	
+	
 	private String email;
+	
+	
 	private String cidadeAtual;
+	
+	
 	private String informacaoAdicional;
 	
 	public String getNome() {

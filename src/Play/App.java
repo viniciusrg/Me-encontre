@@ -2,6 +2,7 @@ package Play;
 
 import classes.MoradorDeRua;
 import classes.Pessoa;
+import webinar.dao.JPAUtil;
 import classes.Familiar;
 import classes.Contato;
 import classes.Notificacao;
@@ -9,11 +10,16 @@ import classes.Notificacao;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.persistence.EntityManager;
+
 
 public class App {
 
 	public static void main(String[] args) {
 		
+		EntityManager em = JPAUtil.getEntityManagerFactory().createEntityManager();
+		
+		/*
 		MoradorDeRua morador = new MoradorDeRua();
 		morador.setNome("Matheus");
 		morador.setCidadeAtual("Alfenas");
@@ -40,7 +46,7 @@ public class App {
 		cont.setMensagem("Estou procurando meu irmao, Matheus!");
 		
 		
-		System.out.println("Informação do morador cadastrado:");
+		System.out.println("Informacoes do morador cadastrado:");
 		
 		System.out.println("Nome: " + morador.getNome());
 		System.out.println("Cidade atual: " + morador.getCidadeAtual());
@@ -48,11 +54,11 @@ public class App {
 		System.out.println("Cidade natal: " + morador.getCidadeNatal());
 		System.out.println("Cpf: " + morador.getCpf());
 		System.out.println("Nome dos familiares: " + morador.getNomeFamiliar());
-		System.out.println("Informações adicionais: " + morador.getInformacoesAdicionais());
+		System.out.println("Informacoes adicionais: " + morador.getInformacoesAdicionais());
 		
 		
 		System.out.println();
-		System.out.println("Informações do familiar cadastrado:");
+		System.out.println("Informacoees do familiar cadastrado:");
 		
 		System.out.println("Nome: " + familia.getNome());
 		System.out.println("Email: " + familia.getEmail());
@@ -64,11 +70,28 @@ public class App {
 		System.out.println("Nome do morador: " + familia.getNomeFamiliar());
 		
 		System.out.println();
-		System.out.println("Formulário para contato:");
+		System.out.println("Formulario para contato:");
 		
 		System.out.println("Nome: "+ cont.getNome());
 		System.out.println("Email: " + cont.getEmail());
 		System.out.println("Mensagem: " + cont.getMensagem());
+		*/
+		
+		Pessoa p = new Pessoa();
+		p.setNome("Teste");
+		p.setCpf("11122233344");
+		
+		//Iniciando banco
+		em.getTransaction().begin();
+		System.out.println("dasdasdsd");
+		em.persist(p);
+		
+		em.getTransaction().commit();
+		
+		//Fechando banco
+		em.close();
+		
+		JPAUtil.shutdown();
 		
 	}
 
